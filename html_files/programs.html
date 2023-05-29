@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap_css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../boots/bootstrap.min.css">
+    <!-- font_awesome -->
+    <link rel="stylesheet" href="../Font_6/css/all.min.css">
+    <!-- animate_css -->
+    <link rel="stylesheet" href="../boots/animate.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="../css _folder/style.css">
+    <link rel="stylesheet" href="../css _folder/about.css">
+    <title>Programs-LALVC</title>
+</head>
+<body>
+   <!-- header/navbar -->
+   <header class="fixed-top head-pro">
+    <!-- nav-info-section -->
+    <nav class="main_nav d-none d-lg-block">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-11 main_nav_section d-flex pt-2">
+                    <div class="d-flex">
+                        <div class="main_nav-item pt-1">
+                            <a href="#" class="ms-0 ps-0 pe-5" style="color: white;" id="about-">About us</a>
+                            <a href="#" style="color: white;" id="map_lekki" class="pe-5">Courses</a>
+                        </div>
+                        <ul class="pt-1">
+                            <a href="#" style="color: #f3aa1f; font-size: 14px; font-weight: 400px;"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="#" style="color: #f3aa1f; font-size: 14px; font-weight: 400px;" class="ms-4"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" style="color: #f3aa1f; font-size: 14px; font-weight: 400px;" class="ms-4"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="#" style="color: #f3aa1f; font-size: 14px; font-weight: 400px;" class="ms-4"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </ul>
+                    </div>
+                    <div class="ms-auto pt-1">
+                        <a href="#" style="color: white;" id="map_lekki" class="pe-4">
+                            <i class="fas fa-map-marker-alt"
+                                style="color: #f3aa1f; font-size: 14px; font-weight: 400px;"></i>
+                            <span>Lekki, Lagos</span>
+                        </a>
+                        <a href="#" style="color: white;" class="ms-4">
+                            <i class="fas fa-phone-alt"
+                                style="color: #f3aa1f; font-size: 14px; font-weight: 400px;">
+                                <span class="text-white" style="font-weight: 400;">09161729605</span></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="d-lg-none d-block">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12 donation_sm">
+                    <h2>- Make a donation -</h2>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar-section -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand for-small-view" href="#"><img src="../images/adult_schoolng-logo.png" alt=""></a>
+            <button class="navbar-toggler for-small-view" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="d-lg-none d-block nav-logo-section text-center">
+                <div class="nav_logo">
+                    <a class="navbar-brand nav-logo" href="#">
+                        <img src="../images/adult_schoolng-logo.png" alt="" class="logo-nav">
+                    </a>
+                </div>
+
+                <a class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa fa-bars  mx-auto" onclick="xconChange(this)"></span>
+                </a>
+
+            </div>
+            <div class="collapse navbar-collapse text-lg-center" id="navbarTogglerDemo03">
+                <ul class="navbar-nav bg-white text-center mb-2 mb-lg-0 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Programs&Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery/Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+                <button class="btn donate_button ms-auto" style="padding-top: 13.7px;" type="button">Donate</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- hero-section-about -->
+<section id="hero_about">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Our Courses</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!--Basic One Courses -->
+  <section id="explore">
+    <div class="container">
+      <h1 class="text-center mb-4">Basic One Courses</h1>
+      <div class="row justify-content-center gy-4 mt-5">
+        <div class="col-lg-3 item">
+          <div class="card">
+            <img src="../images/learn.jpeg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <span>
+                <h6 class="card-title">Mrs Adenike Mbulu</h6>
+              </span>
+              <span>
+                <p class="card-text"><small>English Language</small></p>
+              </span>
+              <span class="mt-0 pt-0">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+              <hr class="mt-0 pt-0">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 item">
+          <div class="card">
+            <img src="../images/download.jpeg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <span>
+                <h6 class="card-title">Mr. Lateef A. Ayodele</h6>
+              </span>
+              <span>
+                <p class="card-text"><small>Mathematics</small></p>
+              </span>
+              <span class="mt-0 pt-0">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+              <hr class="mt-0 pt-0">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 item">
+          <div class="card">
+            <img src="../images/generalstudieslogo.jpeg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <span>
+                <h6 class="card-title">Mr. Ehiz Uwague</h6>
+              </span>
+              <span>
+                <p class="card-text"><small>General Studies</small></p>
+              </span>
+              <span class="mt-0 pt-0">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+              <hr class="mt-0 pt-0">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 item">
+            <div class="card">
+              <img src="../images/learn.jpeg" class="card-img-top" alt="...">
+              <div class="card-body p-3">
+                <span>
+                  <h6 class="card-title">Mrs Adenike Mbulu</h6>
+                </span>
+                <span>
+                  <p class="card-text"><small>Civic Education</small></p>
+                </span>
+                <span class="mt-0 pt-0">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </span>
+                <hr class="mt-0 pt-0">
+              </div>
+            </div>
+          </div>
+        <div class="view-section text-center pt-4">
+          <a href="#" class="btn btn-view">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Basic Two Courses -->
+    <section id="explore">
+        <div class="container">
+          <h1 class="text-center mb-4">Basic Two Courses</h1>
+          <div class="row justify-content-center gy-4 mt-5">
+            <div class="col-lg-3 item">
+              <div class="card">
+                <img src="../images/learn.jpeg" class="card-img-top" alt="...">
+                <div class="card-body p-3">
+                  <span>
+                    <h6 class="card-title">Mrs Adenike Mbulu</h6>
+                  </span>
+                  <span>
+                    <p class="card-text"><small>English Language</small></p>
+                  </span>
+                  <span class="mt-0 pt-0">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <hr class="mt-0 pt-0">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 item">
+              <div class="card">
+                <img src="../images/download.jpeg" class="card-img-top" alt="...">
+                <div class="card-body p-3">
+                  <span>
+                    <h6 class="card-title">Mr. Lateef A. Ayodele</h6>
+                  </span>
+                  <span>
+                    <p class="card-text"><small>Mathematics</small></p>
+                  </span>
+                  <span class="mt-0 pt-0">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <hr class="mt-0 pt-0">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 item">
+              <div class="card">
+                <img src="../images/generalstudieslogo.jpeg" class="card-img-top" alt="...">
+                <div class="card-body p-3">
+                  <span>
+                    <h6 class="card-title">Mr. Ehiz Uwague</h6>
+                  </span>
+                  <span>
+                    <p class="card-text"><small>General Studies</small></p>
+                  </span>
+                  <span class="mt-0 pt-0">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <hr class="mt-0 pt-0">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 item">
+                <div class="card">
+                  <img src="../images/learn.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body p-3">
+                    <span>
+                      <h6 class="card-title">Mrs Adenike Mbulu</h6>
+                    </span>
+                    <span>
+                      <p class="card-text"><small>Civic Education</small></p>
+                    </span>
+                    <span class="mt-0 pt-0">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </span>
+                    <hr class="mt-0 pt-0">
+                  </div>
+                </div>
+              </div>
+            <div class="view-section text-center pt-4">
+              <a href="#" class="btn btn-view">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+       <!-- Basic Two Courses -->
+    <section id="explore">
+        <div class="container">
+          <h1 class="text-center mb-4">Post Basic Courses</h1>
+          <div class="row justify-content-center gy-4 mt-5">
+            <div class="col-lg-3 item">
+              <div class="card">
+                <img src="../images/learn.jpeg" class="card-img-top" alt="...">
+                <div class="card-body p-3">
+                  <span>
+                    <h6 class="card-title">Mrs Adenike Mbulu</h6>
+                  </span>
+                  <span>
+                    <p class="card-text"><small>English Language</small></p>
+                  </span>
+                  <span class="mt-0 pt-0">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <hr class="mt-0 pt-0">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 item">
+              <div class="card">
+                <img src="../images/download.jpeg" class="card-img-top" alt="...">
+                <div class="card-body p-3">
+                  <span>
+                    <h6 class="card-title">Mr. Lateef A. Ayodele</h6>
+                  </span>
+                  <span>
+                    <p class="card-text"><small>Mathematics</small></p>
+                  </span>
+                  <span class="mt-0 pt-0">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <hr class="mt-0 pt-0">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 item">
+              <div class="card">
+                <img src="../images/generalstudieslogo.jpeg" class="card-img-top" alt="...">
+                <div class="card-body p-3">
+                  <span>
+                    <h6 class="card-title">Mr. Ehiz Uwague</h6>
+                  </span>
+                  <span>
+                    <p class="card-text"><small>General Studies</small></p>
+                  </span>
+                  <span class="mt-0 pt-0">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <hr class="mt-0 pt-0">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 item">
+                <div class="card">
+                  <img src="../images/learn.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body p-3">
+                    <span>
+                      <h6 class="card-title">Mrs Adenike Mbulu</h6>
+                    </span>
+                    <span>
+                      <p class="card-text"><small>Civic Education</small></p>
+                    </span>
+                    <span class="mt-0 pt-0">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </span>
+                    <hr class="mt-0 pt-0">
+                  </div>
+                </div>
+              </div>
+            <div class="view-section text-center pt-4">
+              <a href="#" class="btn btn-view">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- waec-section -->
+    <section id="explore">
+      <div class="container">
+        <h1 class="text-center mb-4">WAEC</h1>
+        <div class="row justify-content-center gy-4 mt-5 mb-5 waec-item">
+          <div class="col-lg-6 item waec">
+            <div class="card">
+              <img src="../images/generalstudieslogo.jpeg" class="card-img-top" alt="...">
+              <div class="card-body p-3">
+                <span>
+                  <h6 class="card-title">Mr. Ehiz Uwague</h6>
+                </span>
+                <span>
+                  <p class="card-text"><small>General Studies</small></p>
+                </span>
+                <span class="mt-0 pt-0">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </span>
+                <hr class="mt-0 pt-0">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 item">
+              <div class="card">
+                <img src="../images/learn.jpeg" class="card-img-top" alt="...">
+                <div class="card-body p-3">
+                  <span>
+                    <h6 class="card-title">Mrs Adenike Mbulu</h6>
+                  </span>
+                  <span>
+                    <p class="card-text"><small>Civic Education</small></p>
+                  </span>
+                  <span class="mt-0 pt-0">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <hr class="mt-0 pt-0">
+                </div>
+              </div>
+          </div>
+        </div>
+          <div class="view-section text-center">
+            <a href="#" class="btn btn-view">Enroll Now</a>
+          </div>
+      </div>
+  </section>
+
+
+    <section id="eroll-section" class="enroll-section-item">
+        <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+            <h6></h6>
+          <h2 class="text text-white">Enroll With LALVC</h2>
+          <p class="para">
+            We offer a diverse suite of courses and programs, our vocational School prepares students to seek truth and
+            knowledge in the academic endeavour.
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+  
+    <!-- eroll-section -->
+    <section id="form-section" class="mt-0 form-eroll">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 lalvc d-none d-lg-block">
+            <div class="d-flex">
+              <!-- <span class="mt-4 llw"><i class="fa fa-photo-film"></i></span> -->
+              <span><img src="../images/icon-education.png" alt="" class="mt-4 llw"></span>
+              <div>
+                <h2 class="mb-2">LALVC Gives Access To Quality Edcation</h2>
+                <p>
+                  Through the acquisition of basic reading and writing skills plus vocational training, we provide less
+                  privileged men and women with a second chance at life.
+                </p>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="eroll_sign-up">
+              <h6>Fill Your Registration</h6>
+            <!-- <div class="divider-hr mx-auto"></div> -->
+            <form class="row justify-content-center mt-lg-5">
+              <div class="col-lg-6 input-group">
+                <input type="text" id="name" style="border-radius: 5px 5px 5px 5px;" required>
+                <label for="name"><span><i class="fa-solid fa-user"></i></span> Name</label>
+              </div>
+              <div class="col-lg-12 input-group">
+                <input type="email" id="email" style="border-radius: 5px 5px 5px 5px;" required>
+                <label for="email"><span><i class="fa-solid fa-envelope"></i></span> Email</label>
+              </div>
+              <div class="col-lg-6 input-group">
+                <input type="number" id="number" style="border-radius: 5px 5px 5px 5px;" required>
+                <label for="number"><span><i class="fa-solid fa-phone"></i></span> Phone number</label>
+              </div>
+              <div class="col-lg-6 input-group">
+                <input type="date" id="date" placeholder="Date of birth" style="border-radius: 5px 5px 5px 5px;" required>
+                <label for="date"></label>
+              </div>
+              <div id="submit">
+                <button type="submit" class="btn-submit fw-bold">Next</button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- footer-section -->
+      <footer class="mb-0 pb-0 mt-0" id="footer-section">
+        <div class="container">
+          <div class="footer">
+            <div class="row">
+              <div class="col-lg-4 about">
+                <h5>About Us</h5>
+                <p class="pb-3">
+                  “We are a non-profit Adult Learning Centre that teaches Basic Literacy, Numeracy, General Studies and
+                  Vocational Skills to the less privileged. We prepare our Adult learners for government accredited
+                  examinations including O-levels, A-levels and equivalents. We provide a holistic, fun yet impactful
+                  classroom learning with year-round quality educational programming including excursions, seminars and
+                  other extracurricular activities.”
+                </p>
+              </div>
+              <div class="col-lg-2 q-link">
+                <h5>Quick Links</h5>
+                <ul class="p-0">
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Courses</a>
+                  </li>
+                  <li>
+                    <a href="#">Facilitators</a>
+                  </li>
+                  <li>
+                    <a href="#">Donate</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 social-link">
+                <h5>Social Links</h5>
+                <ul class="pt-1 d-flex p-0 ms-0 pe-0">
+                  <li><a href="#"><i class="fa-brands fa-twitter fw-bold" style="color: aquamarine;"></i></a></li>
+                  <li><a href="#"><i class="fab fa-facebook-f" style="color: mediumblue;"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in" style="color: blue;"></i></a></li>
+                  <li> <a href="#"><i class="fa-brands fa-instagram" style="color:palevioletred;"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 contact">
+                <h5>Contact Us</h5>
+                <div class="d-flex item mb-0 pb-0">
+                  <span class="mb-0 pb-0">
+                    <i class="fas fa-map-marker-alt me-3"
+                      style="color: #f3aa1f; font-size: 14px; font-weight: 400px; margin-top: 40px;"></i></span>
+                  <p>
+                    Lekki Adult Literacy and Vocational Centre, RCCG Christ The Lord Parish Admiralty Rd, Lekki, Lagos
+                  </p>
+                </div>
+                <p class="para1">
+                  <small class="mt-0 pt-0">
+                    <span>
+                      <i class="fa-solid fa-envelope pe-2"
+                        style="color: #f3aa1f; font-size: 14px; font-weight: 400px; margin-top: 40px;"></i></span>
+                    <span class="text-white">lekkiadultliteracycenter@gmail.com</span>
+                  </small>
+                </p>
+                <a href="#" style="color: white;">
+                  <i class="fas fa-phone-alt" style="color: #f3aa1f; font-size: 14px; font-weight: 400px;">
+                    <span class="text-white ms-3" style="font-weight: 400;"><span class="para1">09161729605</span>
+                    </span></i>
+                </a>
+                <p>
+                  <small>
+                    <a href="#" style="color: white; cursor: text;">
+                      <i class="fa fa-clock" style="color: #f3aa1f; font-size: 14px; font-weight: 400px;"></i>
+                      <span class="text-white ms-3" style="font-weight: 400;"><span class="para1">Open: Sat 11:00 am - 3:00pm</span> </span>
+                    </a>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row mb-0">
+            <div class="col-lg-6">
+              <p class="pt-2">Copyright © 2022 LALVC. All Rights Reserved.</p>
+            </div>
+            <div class="col-lg-6 text-lg-end pt-2">
+              <p>Terms and Conditions | Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+
+      <script src="../boots/bootstrap.min.js"></script>
+
+      <!-- <script src="../js/js.js"></script> -->
+
+
+      <script>
+        xconChange =icons => icons.classList.toggle("fa-times"); 
+
+        const header = document.querySelector(".head-pro");
+        let lastScroll= window.scrollY;
+      
+         window.addEventListener("scroll", () => {
+              if(lastScroll < window.scrollY){
+                header.classList.add("header-pro");
+              }else{
+                header.classList.remove("header-pro");
+              }
+              lastScroll= window.scrollY
+          })
+        
+      </script>
+</body>
+</html>
