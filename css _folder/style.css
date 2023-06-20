@@ -1561,7 +1561,7 @@ small {
         text-transform: uppercase;
         line-height: 1.3em;
         font-weight: 900;
-        animation:  slide-up 0.90s infinite linear;
+        animation:  slide-up 1s infinite linear;
     }
        
   .donation_sm h2:hover{
