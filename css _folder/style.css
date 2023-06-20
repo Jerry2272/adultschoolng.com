@@ -56,16 +56,20 @@ header{
     height: auto;
   
 }
-.main_nav_section{
+.owl{
+    display: flex;
+    /* overflow: hidden; */
+}
+.main_nav_section,.owl{
       animation:  slide 7s infinite linear;
 }
-.main_nav_section:hover{
+.main_nav_section:hover, .owl:hover{
     animation-play-state: paused;
 }
 
 @keyframes slide {
     0% {
-      transform: translateX(0);
+      transform: translateX(0%)
     }
     100% {
       transform: translateX(-50%);
@@ -205,9 +209,12 @@ header{
     color: #1c1e27;
 }
  .owl-carousel .item-img{
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 .jerry{
    transform: translateY(-70px);
@@ -399,33 +406,33 @@ header{
 
 /* enroll-section-item */
 .enroll-section-item {
-    background: linear-gradient(rgba(28, 30, 28, 0.60), rgba(28, 30, 28, 0.60)), url("../images/enroll_for\ now.jpeg");
+    background: linear-gradient(rgba(14, 22, 51, 0), rgba(14, 22, 51,1)), url("../images/enroll_for\ now.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 411px;
-    width: 100%;
+    height: auto;
     /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s
         background-color: #ffffff;
         border-radius: 5px 5px 5px 5px;
     /* height: 54px; */
     padding: 10px;
     outline: 0;
+    padding-bottom: 0;
 }
 
 .lalvc {
-    padding-top: 10px;
+    padding-top: 19em;
 }
 
 .lalvc h2 {
-    color: #1a1b1e;
+    color: #fff;
     font-weight: 900;
     font-family: "Red Hat Display", sans-serif;
     font-size: 22px;
 }
 
 .lalvc p {
-    color: #606060;
+    color: rgba(255, 255, 255,0.40);
     font-size: 18px;
     font-weight: 400;
     margin: 0 0 20px;
@@ -434,7 +441,7 @@ header{
 }
 
 .lalvc span {
-    background-color: #683900;
+    background-color: #0e1633;
     height: 104px;
     width: 114px;
     padding: 10px 40px 30px 30px;
@@ -456,8 +463,8 @@ header{
     padding: 10px 40px 10px 40px;
     height: 60px;
     margin: auto;
-    background-color: #683900;
-    border-radius: 8px 8px 8px 8px;
+    background-color: #0e1633;
+    border-radius: 2px 2px 2px 2px;
     text-align: center;
     font-weight: 600;
     margin: 0 50px;
@@ -476,19 +483,16 @@ header{
 input {
     width: 100%;
     line-height: 2.20em;
-    font-size: 15px;
-    min-height: 40px;
+    font-size: 12px;
+    min-height: 44px;
+    padding: 10px;
     /* border: 1px solid #69727d;
     color: #1f2124; */
     vertical-align: middle;
     margin-bottom: 20px;
     background-color: #ffffff;
-    color:#e6e6e6  ;
+    color:#0e1633;
     border: 1px solid #7e7e7e;
-    /* border-radius:8px 8px 8px 8px; */
-    /* flex-grow: 1; */
-    /* padding: 9px 20px; */
-    /* box-sizing: border-box; */
 }
 
 label {
@@ -496,9 +500,9 @@ label {
     top: -0px;
     height: 100%;
     padding-left: 10px;
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 15px;
-    color: #7e7e7e;
+    color: #0e1633;
 }
 
 input:focus~label {
@@ -526,22 +530,19 @@ textarea:valid~label {
 
 .eroll_sign-up {
     /* padding: 54px 60px 50px 60px; */
-    max-width: 100%;
-    width: 440px;
     margin-top: 0;
     padding-top: 0;
-    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 10px 60px 0px rgb(6, 6, 6);
     background: #fff;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 0px 0px;
     height: 685px;
     transition: all 0.85s;
     padding: 50px;
-    /* margin: -368px 15px 0px 85px; */
 }
 
 .eroll_sign-up h6 {
-    color: #1a1b1e;
-    /* font-weight: 900; */
+    color: #0e1633;
+    font-weight: 900;
     font-family: "Red Hat Display", sans-serif;
     font-size: 22px;
     line-height: 1.333em;
@@ -782,7 +783,7 @@ small {
 /* Gallery-section */
 .gallery-item {
     position: relative;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     transition: all 0.45s ease-in-out;
     overflow: hidden;
 
@@ -791,13 +792,15 @@ small {
 .gallery-item img {
     width: 365px;
     height: 365px;
-    border-radius: 15px;
+    /* border-radius: 4px; */
     cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: all 0.65s ease-in-out;
     object-fit: cover;
-    /* object-position: top; */
+    scale: 1.3;
+    object-position: top;
+   filter: blur(0px);
 }
 
 .gallery-content-empty-overlay {
@@ -805,22 +808,21 @@ small {
     inset: 0;
     top: 0;
     left: 0;
-    /* border: 15px solid #fff; */
     width: auto;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 25px; */
+    background-color: rgba(14, 22, 51,0.63);
     cursor: pointer;
     height: 100%;
     width: 100%;
-    display: none;
 }
 
 .gallery-item:hover img {
-    scale: 1.2;
+   scale: 1;
+    filter: blur(0.80px);
 }
 
 .gallery-item:hover .gallery-content-empty-overlay {
-    display: block;
+    background-color: rgba(14, 22, 51,0);
 }
 
 .gallery-btn {
@@ -1272,6 +1274,7 @@ small {
     }
 
     .about_more_btn {
+        background-color: #fff;
         border: 2px solid #fff;
         line-height: 1.2em;
         letter-spacing: 1.2px;
@@ -1298,17 +1301,15 @@ small {
 
     /* .enroll-section-item */
     .enroll-section-item {
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
-    #eroll-section {
-        position: relative;
-    }
+   
 
     .eroll_sign-up {
-        transform: translateY(-26em);
-        margin-bottom: -20em;
-        margin-left: 110px;
-        margin-bottom: -18em;
+        /* transform: translateY(-26em); */
+        /* margin-bottom: -20em; */
+        /* margin-left: 110px; */
+        /* margin-bottom: -18em; */
         /* position: absolute; */
     }
     #eroll-section .para {
@@ -1550,39 +1551,56 @@ small {
 
     /* make-a-donation */
     .donation_sm{
-        background-color: #371E05;
-        padding: 15px 0;
+        background-color: #0e1633;
+        padding: 6px 0;
         text-align: center;
     }
     .donation_sm h2{
-        color: #F3A333;
+        color: #fff;
         font-size: 18px;
         text-transform: uppercase;
         line-height: 1.3em;
         font-weight: 900;
+        animation:  slide-up 0.90s infinite linear;
     }
-
+       
+  .donation_sm h2:hover{
+      animation-play-state: paused;
+  }
+  
+  @keyframes slide-up {
+      0% {
+        transform: translateY(0%)
+      }
+      100% {
+        transform: translateY(-50%);
+      }
+  }
     /* navbar-seciton */
     .navbar{
         transition:border 0.3s, border-radius 0.3s, box-shadow 0.3s;
         padding: 10px 0px 10px 0px;
     }
     .nav-link{
-        text-align: left;
+        text-align: center;
+        color: #0e1633;
+        font-size: 14px;
+        font-weight: 600;
+        border-bottom: 1px solid #0e1633;
     }
     .logo-nav{
-        text-align: center;
-        width: 278px;
+        /* text-align: center; */
+        /* width: 278px; */
         height: 48px;
-        margin: 0 20px 10px 30px ;
+        /* margin: 0 20px 10px 30px ; */
         /* margin-right: auto; */
     }
     .navbar-nav{
-        padding-top: 20px;
         transition: all 0.95s ease-in-out;
-    }
-    .nav-link.active{
-        background-color: #F8F8F8;
+        height: 400px;
+        line-height: 40px;
+        background-color: rgba(255, 255, 255,0.50);
+        box-shadow: 0px 10px 5px 0px #000; 
     }
     .navbar-toggler{
         /* transition: all 5s ease; */
@@ -1591,14 +1609,14 @@ small {
         outline: none;
         border-width: 1px;
     border-radius: 3px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: #F8F8F8;
         padding: 10px;
     }
     .navbar-toggler span{
     cursor: pointer;
     border: 0 solid;
-    color: #371E05;
+    color: #0e1633;
     transition: all 0.65s ease-in-out;
     /* position: relative; */
     }
@@ -1610,8 +1628,21 @@ small {
         display: block;
     }
     /* hero-section */
+    .btn_enroll{
+       display: flex;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .about_more_btn{
+        color: #0e1633;
+    }
     #hero {
         height: 742px;
+        background: linear-gradient(to top ,rgba(14, 22, 51,0.80), rgba(14, 22, 51,1)), url("../images/hero-1_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         background-attachment: none;
         padding-top: 3em;
     }
@@ -1680,7 +1711,7 @@ small {
     .skill-item h6,
     .expert-item h6,
     .certificate-item h6 {
-        color: #1a1b1e;
+        color: #0e1633;;
         font-size: 16px;
         font-weight: 700;
     }
@@ -1688,9 +1719,9 @@ small {
     .skill-item p,
     .expert-item p,
     .certificate-item p {
-        color: #757783;
+        color: #0e1633;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     .ski-ex-cer {
@@ -1761,7 +1792,7 @@ small {
     #what-we-do .learn-btn .btn-learn {
         color: #FFFFFF;
         box-shadow: 12px 12px 20px 0px rgba(0, 72, 176, 0.3);
-        background-color: #f3a333;
+        background-color: #0e1633;
         transition: all 0.3s linear;
         text-align: left;
         /* margin: 40px 0 0 -70px; */
@@ -1785,9 +1816,9 @@ small {
         margin: -50px 0 0 -30px;
     } */
 .partner-item .learn-btn .btn-learn {
-    color: #F3a333;
+    color: #fff;
     box-shadow: 12px 12px 20px 0px rgba(0, 72, 176, 0.3);
-    background-color: #fff;
+    background-color: #0e1633;
     transition: all 0.3s linear;
     text-align: left;
     border-radius: 0 40px 40px 0;
@@ -1832,7 +1863,6 @@ small {
 
 /* enroll-section-item */
 .enroll-section-item{
-    height: 282px;
     padding: 60px 5px 40px 20px;
 }
 .enroll-section-item .text{
@@ -1853,21 +1883,24 @@ small {
     box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
     background: #fff;
     border-radius: 8px 8px 8px 8px;
-    height: 685px;
+    /* height: 685px; */
     transition: all 0.85s;
 }
 .eroll_sign-up h6{
     font-size: 22px;
-  color: #1a1b1e;
+  color: #0e1633;
   font-weight: 700;
 }
 .eroll_sign-up{
     height: auto;
+    background: rgba(255, 255, 255,0.60);
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+    padding: 20px;
 }
 /* facilatator */
 #facilatator h2, #trutees h2, .enroll-section-item .text{
     font-size: 28px;
-    color: #1a1b1e;
+    color: #0e1633;
     font-weight: 900;
     line-height: 1.3em;
     padding-bottom: 0;
@@ -1890,14 +1923,36 @@ small {
         height: auto;
     }
 
+    /* education  */
+    .education h1{
+        text-align: center;
+        margin-bottom: 4em;
+    }
+
     /* footer-section */
     #footer-section {
         height: auto;
     }
+    .icon-footer{
+        gap: 20px;
+        text-align: left;
+        padding: 0;
+    }
+    .foo p{
+        font-size: 12px;
+    }
+    .icon-footer li a{
+        text-align: left;
+        padding: 0;
+    }
    .owl-carousel .item-img{
-        width: 100px;
+        width: 50px;
     }
 
+    .gallery-btn{
+        background-color: #0e1633;
+        color: #fff;
+    }
 
     /* eroll-section */
     #eroll-section.lalvc {

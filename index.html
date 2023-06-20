@@ -72,26 +72,13 @@
     <!-- navbar-section -->
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand for-small-view"  href="#"><img src="images/adult_schoolng-logo.png" alt=""></a>
-       <button class="navbar-toggler for-small-view" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-         aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="fa fa-bars" ></span>
-       </button>
-     <div class="d-lg-none d-block nav-logo-section text-center">
-        <div class="nav_logo">
-           <a class="navbar-brand nav-logo" href="#"> 
-            <img src="images/adult_schoolng-logo.png" alt="" class="logo-nav">
-          </a>
-          </div>
-
-        <a class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fa fa-bars  mx-auto" onclick="iconChange(this)"></span>
-     </a>
-
-     </div>
+        <a class="navbar-brand"  href="#"><img src="images/adult_schoolng-logo.png" alt=""></a>
+        <a class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars" onclick="iconChange(this)"></span>
+   </a>
         <div class="collapse navbar-collapse text-lg-center" id="navbarTogglerDemo03">
-          <ul class="navbar-nav bg-white text-center mb-2 mb-lg-0 d-flex justify-content-center">
+          <ul class="navbar-nav  text-center mb-2 mb-lg-0 d-flex justify-content-center">
              <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
@@ -170,7 +157,7 @@
   <!-- about-section -->
   <section id="about">
     <div class="container-fluid">
-      <div class="row justify-content-center about_section_content gx-0">
+      <div class="row justify-content-center about_section_content gx-0 gy-3">
         <div class="col-lg-6 about-first-section-item">
           <img src="images/about_bg-section.jpg" class="d-block">
           <div class="about-section-empty d-none d-lg-block"><img src="images/about-item.jpg" alt=""></div>
@@ -182,7 +169,7 @@
             Lekki Adult Literacy & Vocational Centre is a school of continuing education with a unique curriculum to
             provide life-long skills to young hearted individuals.
           </p>
-          <p class="mb-0 pb-0"><span><i class="fa fa-check-circle me-4"></i></span> Find the best qualitfied teacher for
+          <p class="mb-0 pb-0 text-white-50"><span><i class="fa fa-check-circle me-4"></i></span> Find the best qualitfied teacher for
             you</p>
           <div class="container">
             <div class="row pt-lg-4">
@@ -199,7 +186,7 @@
                 </div>
               </div>
               <div class="mt-5">
-                <button class="btn about_more_btn">Learn More</button>
+                <button class="btn about_more_btn" style="color: #0e1633;">Learn More</button>
               </div>
             </div>
           </div>
@@ -210,7 +197,7 @@
 
   <!-- partner-carousel-section -->
   <section id="carousel-section">
-    <div class="container">
+    <div class="container text-center">
 
       <div class="row justify-content-center text-center">
         <div class="col-lg-10">
@@ -221,6 +208,7 @@
       <!-- owl-carousel -->
      <div class="row justify-content-center mx-auto">
       <div class="owl-carousel owl-theme">
+      <div class="owl">
         <div class="item">
           <div class="item-img">
             <img src="images/redeem.png" alt="" class="owl-image">
@@ -237,6 +225,11 @@
           </div>
         </div>
         <div class="item">
+          <div class="item-img">
+            <img src="images/Lagos-State-Government.-180x180.png" alt="">
+          </div>
+        </div>
+        <div class="item">
          <div class="item-img">
           <img src="images/Lagos-State-Government.-180x180.png" alt="">
          </div>
@@ -246,6 +239,13 @@
             <img src="images/redeem.png" alt="">
           </div>
         </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="images/Lagos-State-Government.-180x180.png" alt="">
+          </div>
+        </div>
+
+      </div>
       </div>
      </div>
     </div>
@@ -376,15 +376,58 @@
     </div>
   </section>
 
-  <section id="eroll-section" class="enroll-section-item">
+  <section id="eroll-section" class="enroll-section-item pb-0">
       <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-12">
         <h2 class="text text-white">Enroll Today</h2>
         <p class="para">
           We offer a diverse suite of courses and programs, our vocational School prepares students to seek truth and
           knowledge in the academic endeavour.
         </p>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5 pt-5 pb-0">
+      <div class="col-lg-6 lalvc d-none d-lg-block">
+        <div class="d-flex">
+          <!-- <span class="mt-4 llw"><i class="fa fa-photo-film"></i></span> -->
+          <span><img src="images/icon-education.png" alt="" class="mt-4 llw"></span>
+          <div>
+            <h2 class="mb-2">LALVC Gives Access To Quality Edcation</h2>
+            <p>
+              Through the acquisition of basic reading and writing skills plus vocational training, we provide less
+              privileged men and women with a second chance at life.
+            </p>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="eroll_sign-up">
+          <h6>Fill Your Registration</h6>
+        <!-- <div class="divider-hr mx-auto"></div> -->
+        <form class="row justify-content-center mt-lg-5">
+          <div class="col-lg-6 input-group mb-2 col-12">
+            <input type="text" id="name" style="border-radius: 2px 2px 2px 2px;" required>
+            <label for="name"><span><i class="fa-solid fa-user"></i></span> Name</label>
+          </div>
+          <div class="col-lg-12 input-group mb-2 col-12">
+            <input type="email" id="email" style="border-radius: 2px 2px 2px 2px;" required>
+            <label for="email"><span><i class="fa-solid fa-envelope"></i></span> Email</label>
+          </div>
+          <div class="col-lg-6 input-group mb-2 col-12">
+            <input type="number" id="number" style="border-radius: 2px 2px 2px 2px;" required>
+            <label for="number"><span><i class="fa-solid fa-phone"></i></span> Phone number</label>
+          </div>
+          <div class="col-lg-6 input-group mb-2 col-12">
+            <input type="date" id="date" placeholder="Date of birth" style="border-radius: 5px 5px 5px 5px;" required>
+            <label for="date"></label>
+          </div>
+          <div id="submit">
+            <button type="submit" class="btn-submit fw-bold pt-1">Next</button>
+          </div>
+        </form>
+        </div>
       </div>
     </div>
   </div>
@@ -393,49 +436,7 @@
   <!-- eroll-section -->
   <section id="form-section" class="mt-0">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 lalvc d-none d-lg-block">
-          <div class="d-flex">
-            <!-- <span class="mt-4 llw"><i class="fa fa-photo-film"></i></span> -->
-            <span><img src="images/icon-education.png" alt="" class="mt-4 llw"></span>
-            <div>
-              <h2 class="mb-2">LALVC Gives Access To Quality Edcation</h2>
-              <p>
-                Through the acquisition of basic reading and writing skills plus vocational training, we provide less
-                privileged men and women with a second chance at life.
-              </p>
-              <hr>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="eroll_sign-up">
-            <h6>Fill Your Registration</h6>
-          <!-- <div class="divider-hr mx-auto"></div> -->
-          <form class="row justify-content-center mt-lg-5">
-            <div class="col-lg-6 input-group">
-              <input type="text" id="name" style="border-radius: 5px 5px 5px 5px;" required>
-              <label for="name"><span><i class="fa-solid fa-user"></i></span> Name</label>
-            </div>
-            <div class="col-lg-12 input-group">
-              <input type="email" id="email" style="border-radius: 5px 5px 5px 5px;" required>
-              <label for="email"><span><i class="fa-solid fa-envelope"></i></span> Email</label>
-            </div>
-            <div class="col-lg-6 input-group">
-              <input type="number" id="number" style="border-radius: 5px 5px 5px 5px;" required>
-              <label for="number"><span><i class="fa-solid fa-phone"></i></span> Phone number</label>
-            </div>
-            <div class="col-lg-6 input-group">
-              <input type="date" id="date" placeholder="Date of birth" style="border-radius: 5px 5px 5px 5px;" required>
-              <label for="date"></label>
-            </div>
-            <div id="submit">
-              <button type="submit" class="btn-submit fw-bold">Next</button>
-            </div>
-          </form>
-          </div>
-        </div>
-      </div>
+     
     </div>
   </section>
 
@@ -714,10 +715,10 @@
   </section>
 
   <!-- Education-section -->
-  <section id="education-section" class="container-fluid p-5">
+  <section id="education-section" class="container-fluid p-lg-5">
       <div class="row justify-content-center">
         <div class="col-lg-12">
-          <div class=" education">
+          <div class=" education p-3">
             <h1><strong>Kickstart Your Education with LALVC</strong></h1>
             <button class="btn btn_enroll mt-lg-5 mt-2" type="button">Enroll Today</button>
           </div>
@@ -792,15 +793,15 @@
           </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="row foo">
           <div class="col-lg-4">
             <p class="pt-2"><small>Copyright © 2022 LALVC. All Rights Reserved.</small></p>
           </div>
-          <div class="col-lg-4 text-lg-end pt-2">
+          <div class="col-lg-4 text-lg-end pt-lg-2">
             <p><small>Terms and Conditions | Privacy Policy</small></p>
           </div>  
           <div class="col-lg-4">
-            <ul class="pt-1 d-flex icon-footer">
+            <ul class="pt-lg-1 d-flex icon-footer">
               <li><a href="#"><i class="fa-brands fa-twitter fw-bold"></i></a></li>
               <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
               <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
